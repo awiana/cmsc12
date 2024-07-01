@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Page</title>
+        <script src="demojs2.js"></script>
+    </head>
+    <body>
+        <h1>Milk Tea Order Form</h1>
+        <form id="myform">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>Name: <input type="text" id="cname" name="cname" required/></label><br>
+                <label>Mobile Number: <input type="text" pattern="09[0-9]{9}" id="cell" name= "cell" required/></label><br>
+                <label>Delivery Address:<br>
+                    <textarea id="addr" name="addr" rows="4" placeholder="Address Here..." disabled></textarea>
+                </label><br>
+                Size<br>
+                <label><input type="radio" name="size" id="size_s" value="Small" checked onchange="summarize()"/>Small</label><br>
+                <label><input type="radio" name="size" id="size_m" value="Medium" onchange="summarize()"/>Medium</label><br>
+                <label><input type="radio" name="size" id="size_l" value="Large" onchange="summarize()"/>Large</label><br>
+ 
+                <button type="button" onclick="summarize()">Update Summary</button>
+ 
+            </fieldset>
+            <fieldset>
+                <legend>Summary</legend>
+                <p id="cinfo">No customer information yet</p>
+                <p id="cost">Cost: &#8369; 0.00</p>
+            </fieldset>
+            <input type="submit"/><input type="reset"/>
+        </form>
+    </body>
+</html>
