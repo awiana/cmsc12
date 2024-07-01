@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo page</title>
+        <script src="demo1.js"></script>
+    </head>
+    <body>
+        <h1> Milk Tea Order Form</h1>
+        <form>
+            <fieldset>
+                <legend> Customer Information</legend>
+                <label>Name: <input type="text" id="cname" required></label><br>
+                <label>Mobile Number: <input type="text" pattern="09[0-9]{9}" id="cell" name="cell" maxlength="11" required></label><br>
+                <label>Delivery Address: <br>
+                    <textarea name="" id="" cols="30" rows="10" type="text" placeholder="Address here... " id="addr" name="addr"required></textarea></label><br>
+
+                
+                Size<br>
+                <label><input type="radio" name="size" id="size_s" value="Small"/>Small</label><br>
+                <label><input type="radio" name="size" id="size_m" value="Medium"/>Medium</label><br>
+                <label><input type="radio" name="size" id="size_l" value="Large" />Large</label><br>
+
+                <button type="button" onclick="summarize()">Update Summary</button>
+
+            </fieldset>
+            <fieldset>
+                <legend>Summary</legend>
+                <p id="cinfo"> No Customer Information yet</p>
+                <p id="cost"> Cost: &#8369; 0.00</p>
+            </fieldset>
+            <input type="submit"/> <input type="reset"/>
+        </form>
+    </body>
+</html>
+    
