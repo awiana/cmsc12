@@ -1,0 +1,202 @@
+/*This program creates a CSS styling for the second page of the HTML Party Details Form */
+/* Created by: Edgar Alan Emmanuel B. Tiamzon III */
+/* BL1 */
+/* 11-14-23 */
+
+/* REFERENCES */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Lilita+One&display=swap');
+
+/* CSS CheatSheet */
+@import url("https://htmlcheatsheet.com/css/#");
+
+/* Realtime Colors */
+@import url("https://www.realtimecolors.com/?colors=180202-fafafa-ff6d4d-e6e6e5-d12600&fonts=Poppins-Poppins");
+
+/* Canva for background */
+@import url("https://www.canva.com");
+
+/* Color Hunt */
+@import url("https://colorhunt.co");
+
+/* This styles the background of the second page. */
+body {
+  background-color:  #fbeaeb;
+  background-image: url("images/bg.png")
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+/* This styles the party details form of the webpage */
+fieldset label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  color: black;
+}
+
+
+h1 {
+  text-align: center;
+  color: #A05C2F;
+  font-size: 250%;
+}
+
+fieldset {
+  -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.56); 
+  box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.56);
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  background-color: #F9D94D;
+  border: 0px solid white;
+  padding: 2em;
+  width: 40em;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: left;
+  gap: 3em;
+}
+
+
+
+.menu ul {
+  display: inline-flex;
+  margin: 50px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #f3e99f;
+  cursor: pointer;
+}
+
+legend {
+  margin: 0 auto;
+  font-size: 25px;
+  position: relative;
+  top: 1.5em;
+  padding-top: 0em;
+  color: #A05C2F;
+}
+
+.input {
+  background-color: #F2F1F1;
+  border-radius: 4px;
+  border: 0px solid;
+  font-family: "Poppins", sans-serif;
+}
+
+.input:disabled{
+  background-color: rgb(227, 224, 224);
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+  width: 5em;
+}
+
+/* This styles the buttons of the webpage */
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1em;
+  border: 0px solid transparent;
+  margin-left: 580px;
+  margin-bottom: 50px;
+}
+
+.container [type="submit"]{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 100px;
+  width: 50px;
+  background: white;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.52);
+  font-family: "DM Sans", sans-serif; 
+  border-color: transparent;
+}
+
+.container [type="reset"]{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 100px;
+  width: 50px;
+  background: white;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.52);
+  font-family: "DM Sans", sans-serif; 
+  position: relative;
+  border-color: transparent;
+}
+
+form a{
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 100px;
+  width: 50px;
+  background: #F3F2EE;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.52);
+  font-family: "DM Sans", sans-serif;
+  margin-left: 40px;
+}
+
+.price{
+  float: right;
+  
+}
+
+.forlabel{
+  display:grid;
+  grid-template-columns: 1em 12em 4em;
+}
+
+.forlabel1{
+  display:grid;
+  grid-template-columns: 1em 14em 4em;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+}
+
+
