@@ -1,0 +1,99 @@
+<!-- This program creates an HTML page for settting up a party with details-->
+<!--Created by: Edgar Alan Emmanuel B. Tiamzon III-->
+<!--Exercise #8-->
+<!--11/07/23-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Party Package Form </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend> Customer Information</legend>
+                <label for="name"> Name: <input type="text" name="name" id="name" required> </label> <br/>
+                <label for="mobilenumber"> Mobile Number: <input type="tel" name="mobilenumber" id="mobilenumber" placeholder="09XXXXXXXXX" pattern="09[0-9]{9}" maxlength="11" required></label> <br/>
+                <label for="emailaddress"> Email Address: <input type="email" name="emailaddress" id="emailaddress" required> </label> <br/>
+            </fieldset>
+    
+            <fieldset>
+                <legend> Party Details </legend>
+                <label for="nop"> Number of People </label> <input type="number" name="number of people" id="nop" required> <br/>
+                <label for="appetizer"> Appetizer </label><br>
+                <input type="radio" id="salad" name="appetizer" value="Salad" checked="checked">
+                <label for="salad"> Salad </label><br>
+                <input type="radio" id="bread w/ dip" name="appetizer" value="Bread w/ Dip">
+                <label for="bread w/ dip"> Bread w/ Dip </label> <br>
+                <input type="radio" id="tomatosurpise" name="appetizer" value="Tomato Surpise">
+                <label for="tomatosurpise"> Tomato Surprise </label><br> 
+                <input type="radio" id="mushroom bites" name="appetizer" value="Mushroom Bites">
+                <label for="mushroom bites"> Mushroom Bites </label><br> 
+
+                <label for="maindish"> Main Dishes </label><br>
+                <input type="checkbox" id="maindish1" name="maindish1" value="Roast Beef">
+                <label for="maindish1"> Roast Beef </label><br>
+                <input type="checkbox" id="maindish2" name="maindish2" value="Beef Steak">
+                <label for="maindish2"> Beef Steak </label><br>
+                <input type="checkbox" id="maindish3" name="maindish3" value="Pork Spareribs">
+                <label for="maindish3"> Pork Spareribs </label><br>
+                <input type="checkbox" id="maindish4" name="maindish4" value="Pork Marbella">
+                <label for="maindish4"> Pork Marbella </label><br>
+                <input type="checkbox" id="maindish5" name="maindish5" value="Grilled Chicken">
+                <label for="maindish5"> Grilled Chicken </label><br>
+                <input type="checkbox" id="maindish6" name="maindish6" value="Roast Chicken">
+                <label for="maindish6"> Roast Chicken </label><br>
+                <input type="checkbox" id="maindish7" name="maindish7" value="Boiled Salmon">
+                <label for="maindish7"> Boiled Salmon </label><br>
+                <input type="checkbox" id="maindish8" name="maindish8" value="Grilled Salmon">
+                <label for="maindish8"> Grilled Salmon </label><br>
+
+                <label for="desserts"> Desserts </label><br>
+                <input type="checkbox" id="dessert1" name="dessert1" value="Molten Chocolate Cake">
+                <label for="dessert1"> Molten Chocolate Cake </label><br>
+                <input type="checkbox" id="dessert2" name="dessert2" value="Red Velvet Cake">
+                <label for="dessert2"> Red Velvet Cake </label><br>
+                <input type="checkbox" id="dessert3" name="dessert3" value="Lemon Bars">
+                <label for="dessert3"> Lemon Bars </label><br>
+                <input type="checkbox" id="dessert4" name="dessert4" value="Peanut Butter Bars">
+                <label for="dessert4"> Peanut Butter Bars </label><br>
+                <input type="checkbox" id="dessert5" name="dessert5" value="Buko Pie">
+                <label for="dessert5"> Buko Pie </label><br>
+                <input type="checkbox" id="dessert6" name="dessert6" value="Lemon Meringue Pie">
+                <label for="dessert6"> Lemon Meringue Pie </label><br>
+                
+                <label for="typeofrice"> Type of Rice</label><br>
+                <input type="radio" id="plain" name="rice" value="Plain" checked="checked">
+                <label for="plain"> Plain </label><br>
+                <input type="radio" id="garlic" name="rice" value="Garlic">
+                <label for="garlic"> Garlic </label><br>
+                <input type="radio" id="bagoong" name="rice" value="Bagoong">
+                <label for="bagoong"> Bagoong </label><br>
+
+                <label for="drinks"> Drinks </label><br>
+                <input type="radio" id="cucumberlemonade" name="drink" value="Cucumber Lemonade" checked="checked">
+                <label for="cucumberlemonade"> Cucumber Lemonade </label><br>
+                <input type="radio" id="redicedtea" name="drink" value="Red Iced Tea">
+                <label for="redicedtea"> Red Iced Tea </label><br>
+                <input type="radio" id="ripemangojuice" name="drink" value="Ripe Mango Juice">
+                <label for="ripemangojuice"> Ripe Mango Juice </label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Delivery Details</legend>
+
+                    <label for="venueaddress"> Venue Address </label> <br>
+                    <textarea id="venueaddress" name="venueaddress" placeholder="Address here..."  row="4" cols="50" required></textarea> <br>
+                    
+                <label for="partydate"> Party date </label>
+                <input type="date" id="partydate" name="partydate" required> <br>
+                <label for="partytime"> Party time </label> 
+                <input type="time" id="partytime" name="partytime" required>
+        
+            </fieldset>
+            <button type="submit"> Submit </button>
+            <button type="reset"> Reset </button>
+        </form>
+    </body>
+</html>
