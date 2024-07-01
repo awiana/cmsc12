@@ -1,0 +1,402 @@
+<!--This program creates an HTML page for settting up the Party Details Order Form-->
+<!--Created by: Edgar Alan Emmanuel B. Tiamzon III-->
+<!--BL1-->
+<!--11-07-23-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Savor Spot Order Form</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <script src="Tiamzon_ex11.js"></script>
+    <link rel="stylesheet" href="Tiamzon_ex9.2.css" />
+  </head>
+  <body>
+    <form action="" onchange="summarize()">
+      <h1>CHOOSE YOUR ORDER HERE!</h1>
+      <br />
+      <a href="Tiamzon_ex8.html">Home </a>
+
+      <fieldset>
+        <legend>CUSTOMER INFORMATION</legend>
+        <br />
+        <br />
+        <label for="cname">
+          <b>Name :</b>
+          <input class="input" type="text" name="cname" id="cname" required />
+        </label>
+        <br />
+        <br />
+        <label for="mobilenumber">
+          <b>Mobile Number :</b>
+          <input
+            class="input"
+            type="tel"
+            name="mobilenumber"
+            id="mobilenumber"
+            placeholder="09XXXXXXXXX"
+            pattern="09[0-9]{9}"
+            maxlength="11"
+            required
+        /></label>
+        <br />
+        <br />
+        <label for="emailaddress">
+          <b>Email Address :</b>
+          <input
+            class="input"
+            type="email"
+            name="emailaddress"
+            id="emailaddress"
+            required
+          />
+        </label>
+        <br />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>PARTY DETAILS</legend>
+        <br />
+        <br />
+        <label for="nop">
+          <b>Number of People </b>
+          <input
+            class="input"
+            type="number"
+            name="number of people"
+            id="nop"
+            min="10"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+        <div class="row">
+          <div class="col">
+            <label for="appetizer"> <b>Appetizer</b> </label><br />
+
+            <label for="salad" class="forlabel">
+              <input
+                type="radio"
+                id="salad"
+                name="appetizer"
+                value="Salad"
+                checked="checked"
+              />Salad <span class="price"> 100</span>
+            </label>
+
+            <label for="bread w/ dip" class="forlabel">
+              <input
+                type="radio"
+                id="bread w/ dip"
+                name="appetizer"
+                value="Bread w/ Dip"
+              />Bread w/ Dip <span class="price"> 70</span>
+            </label>
+
+            <label for="tomato_surprise" class="forlabel">
+              <input
+                type="radio"
+                id="tomato_surprise"
+                name="appetizer"
+                value="Tomato Surpise"
+              />Tomato Surprise <span class="price"> 120 </span>
+            </label>
+
+            <label for="mushroom_bites" class="forlabel">
+              <input
+                type="radio"
+                id="mushroom_bites"
+                name="appetizer"
+                value="Mushroom Bites"
+              />
+              Mushroom Bites <span class="price"> 150 </span>
+            </label>
+
+            <br />
+            <label for="maindish"> <b>Main Dish</b> </label><br />
+
+            <label for="roast_beef" class="forlabel">
+              <input
+                type="checkbox"
+                id="roast_beef"
+                name="maindish"
+                value="Roast Beef"
+              />
+              Roast Beef <span class="price"> 300 </span>
+            </label>
+
+            <label for="beef_steak" class="forlabel">
+              <input
+                type="checkbox"
+                id="beef_steak"
+                name="maindish"
+                value="Beef Steak"
+              />Beef Steak <span class="price"> 270 </span>
+            </label>
+
+            <label for="pork_spareribs" class="forlabel">
+              <input
+                type="checkbox"
+                id="pork_spareribs"
+                name="maindish"
+                value="Pork Spareribs"
+              />
+              Pork Spareribs <span class="price"> 240 </span>
+            </label>
+
+            <label for="pork_marbella" class="forlabel">
+              <input
+                type="checkbox"
+                id="pork_marbella"
+                name="maindish"
+                value="Pork Marbella"
+              />Pork Marbella <span class="price"> 250 </span>
+            </label>
+
+            <label for="grilled_chicken" class="forlabel">
+              <input
+                type="checkbox"
+                id="grilled_chicken"
+                name="maindish"
+                value="Grilled Chicken"
+              />Grilled Chicken <span class="price"> 190 </span>
+            </label>
+
+            <label for="roast_chicken" class="forlabel">
+              <input
+                type="checkbox"
+                id="roast_chicken"
+                name="maindish"
+                value="Roast Chicken"
+              />
+              Roast Chicken <span class="price"> 190 </span>
+            </label>
+
+            <label for="boiled_salmon" class="forlabel">
+              <input
+                type="checkbox"
+                id="boiled_salmon"
+                name="maindish"
+                value="Boiled Salmon"
+              />
+              Boiled Salmon <span class="price"> 170 </span>
+            </label>
+
+            <label for="grilled_salmon" class="forlabel">
+              <input
+                type="checkbox"
+                id="grilled_salmon"
+                name="maindish"
+                value="Grilled Salmon"
+              />Grilled Salmon <span class="price"> 180 </span>
+            </label>
+
+            <br />
+          </div>
+          <div class="col">
+            <label for="desserts"> <b>Desserts</b> </label>
+
+            <label for="molten_chocolate" class="forlabel1">
+              <input
+                type="checkbox"
+                id="molten_chocolate"
+                name="desserts"
+                value="Molten Chocolate Cake"
+              />
+              Molten Chocolate Cake <span class="price"> 120 </span>
+            </label>
+
+            <label for="red_velvet" class="forlabel1">
+              <input
+                type="checkbox"
+                id="red_velvet"
+                name="desserts"
+                value="Red Velvet Cake"
+              />
+              Red Velvet Cake <span class="price"> 90 </span>
+            </label>
+
+            <label for="lemon_bars" class="forlabel1">
+              <input
+                type="checkbox"
+                id="lemon_bars"
+                name="desserts"
+                value="Lemon Bars"
+              />Lemon Bars <span class="price"> 50 </span>
+            </label>
+
+            <label for="peanut_butter" class="forlabel1">
+              <input
+                type="checkbox"
+                id="peanut_butter"
+                name="desserts"
+                value="Peanut Butter Bars"
+              />Peanut Butter Bars <span class="price"> 60 </span>
+            </label>
+
+            <label for="buko_pie" class="forlabel1">
+              <input
+                type="checkbox"
+                id="buko_pie"
+                name="desserts"
+                value="Buko Pie"
+              />Buko Pie <span class="price"> 50 </span>
+            </label>
+
+            <label for="lemon_meringue" class="forlabel1">
+              <input
+                type="checkbox"
+                id="lemon_meringue"
+                name="desserts"
+                value="Lemon Meringue Pie"
+              />Lemon Meringue <span class="price"> 70 </span>
+            </label>
+
+            <br />
+
+            <label for="typeofrice"> <b>Type of Rice</b></label
+            ><br />
+
+            <label for="plain" class="forlabel1">
+              <input
+                type="radio"
+                id="plain"
+                name="typeofrice"
+                s
+                value="Plain"
+                checked="checked"
+              />
+              Plain <span class="price"> 30 </span>
+            </label>
+
+            <label for="garlic" class="forlabel1">
+              <input
+                type="radio"
+                id="garlic"
+                name="typeofrice"
+                value="Garlic"
+              />
+              Garlic <span class="price"> 40 </span>
+            </label>
+
+            <label for="bagoong" class="forlabel1">
+              <input
+                type="radio"
+                id="bagoong"
+                name="typeofrice"
+                value="Bagoong"
+              />
+              Bagoong <span class="price"> 35 </span>
+            </label>
+
+            <br />
+
+            <label for="drinks"> <b>Drinks</b> </label><br />
+
+            <label for="cucumber_lemonade" class="forlabel1">
+              <input
+                type="radio"
+                id="cucumber_lemonade"
+                name="drinks"
+                value="Cucumber Lemonade"
+                checked="checked"
+              />
+              Cucumber Lemonade <span class="price"> 60 </span>
+            </label>
+
+            <label for="red_icedtea" class="forlabel1">
+              <input
+                type="radio"
+                id="red_icedtea"
+                name="drinks"
+                value="Red Iced Tea"
+              />
+              Red Iced Tea <span class="price"> 50 </span>
+            </label>
+
+            <label for="ripemango_juice" class="forlabel1">
+              <input
+                type="radio"
+                id="ripemango_juice"
+                name="drinks"
+                value="Ripe Mango Juice"
+              />
+              Ripe Mango Juice <span class="price"> 70 </span>
+            </label>
+            <br />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>DELIVERY DETAILS</legend>
+        <br />
+        <p>Customer will avail of</p>
+        <label for="pickup"
+          >Store Pickup
+          <input type="radio" id="pickup" name="availoption" />
+        </label>
+        <label for="delivery">
+          Delivery
+          <input type="radio" id="delivery" name="availoption" />
+        </label>
+        <label for="venueaddress"> <b>Venue Address</b> </label> <br />
+        <textarea
+          class="input"
+          id="venueaddress"
+          name="venueaddress"
+          placeholder="Address here..."
+          row="4"
+          cols="50"
+          required
+        ></textarea>
+        <label for="partydate"> <b>Party date</b> </label>
+        <input
+          class="input"
+          type="date"
+          id="partydate"
+          name="partydate"
+          required
+        />
+        <label for="partytime"> <b>Party time</b> </label>
+        <input
+          class="input"
+          type="time"
+          id="partytime"
+          name="partytime"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>SUMMARY</legend>
+        <br />
+        <label>
+          <p id="cinfo">No Customer Information yet</p>
+          <p id="nop1">Number of People:</p>
+          <p id="emadd1">Email Address:</p>
+          <p id="cost">Cost: &#8369; 0.00</p>
+
+          <br />
+          <p id="AZ">Appetizer:</p>
+          <p id="MD">Main Dish:</p>
+          <p id="DS">Desserts:</p>
+          <p id="TRS">Type of Rice:</p>
+          <p id="DR">Drinks:</p>
+
+          <br />
+          <p id="venueaddress"></p>
+        </label>
+      </fieldset>
+      <br />
+      <br />
+      <div class="container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
